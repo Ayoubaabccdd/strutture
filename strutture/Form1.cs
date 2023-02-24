@@ -68,10 +68,24 @@ namespace strutture
 
         private void modifica_Click(object sender, EventArgs e)
         {
+            dim=0;
             for (int i = 0; i < dim; i++) 
             {
-
+              p[dim].nome = modi.Text;
+              p[dim].prezzo= float.Parse(prezzo.Text);
             }
+            listView1.Items.Clear();
+            dim = 0;
+            for (int i = 0; i < dim; i++)
+            {
+                listView1.Items.Add(prodString(p[i]));
+            }
+            
+        }
+
+        private void modi_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
