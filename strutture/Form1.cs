@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace strutture
@@ -53,6 +54,23 @@ namespace strutture
             for (int i = 0; i < dim; i++)
             {
                 listView1.Items.Add(prodString(p[i]));
+            }
+        }
+
+        private void visu_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            for (int i = 0; i < dim; i++)
+            {
+                listView1.Items.Add(prodString(p[i]));
+            }
+        }
+
+        private void modifica_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dim; i++) 
+            {
+
             }
         }
     }

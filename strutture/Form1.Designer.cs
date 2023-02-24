@@ -34,18 +34,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.salva = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.visu = new System.Windows.Forms.Button();
+            this.modifica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nome
             // 
-            this.nome.Location = new System.Drawing.Point(133, 99);
+            this.nome.Location = new System.Drawing.Point(133, 105);
             this.nome.Name = "nome";
             this.nome.Size = new System.Drawing.Size(100, 20);
             this.nome.TabIndex = 0;
             // 
             // prezzo
             // 
-            this.prezzo.Location = new System.Drawing.Point(312, 98);
+            this.prezzo.Location = new System.Drawing.Point(245, 105);
             this.prezzo.Name = "prezzo";
             this.prezzo.Size = new System.Drawing.Size(100, 20);
             this.prezzo.TabIndex = 1;
@@ -53,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 62);
+            this.label1.Location = new System.Drawing.Point(130, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
@@ -63,7 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(312, 61);
+            this.label2.Location = new System.Drawing.Point(242, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 3;
@@ -71,7 +73,7 @@
             // 
             // salva
             // 
-            this.salva.Location = new System.Drawing.Point(136, 166);
+            this.salva.Location = new System.Drawing.Point(12, 105);
             this.salva.Name = "salva";
             this.salva.Size = new System.Drawing.Size(75, 23);
             this.salva.TabIndex = 4;
@@ -89,11 +91,33 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
             // 
+            // visu
+            // 
+            this.visu.Location = new System.Drawing.Point(12, 134);
+            this.visu.Name = "visu";
+            this.visu.Size = new System.Drawing.Size(75, 23);
+            this.visu.TabIndex = 0;
+            this.visu.Text = "Visualizza";
+            this.visu.UseVisualStyleBackColor = true;
+            this.visu.Click += new System.EventHandler(this.visu_Click);
+            // 
+            // modifica
+            // 
+            this.modifica.Location = new System.Drawing.Point(12, 164);
+            this.modifica.Name = "modifica";
+            this.modifica.Size = new System.Drawing.Size(75, 23);
+            this.modifica.TabIndex = 6;
+            this.modifica.Text = "Modifica";
+            this.modifica.UseVisualStyleBackColor = true;
+            this.modifica.Click += new System.EventHandler(this.modifica_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.modifica);
+            this.Controls.Add(this.visu);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.salva);
             this.Controls.Add(this.label2);
@@ -116,6 +140,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button salva;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button visu;
+        private System.Windows.Forms.Button modifica;
     }
 }
 
