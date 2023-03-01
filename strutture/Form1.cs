@@ -1,28 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using System.Windows.Forms;
 
 namespace strutture
 {
     public partial class Form1 : Form
-    {   public struct prodotto
+    {
+        public struct prodotto
         {
             public string nome;
             public float prezzo;
         }
-        public prodotto [] p;
+        public prodotto[] p;
         public int dim;
         public Form1()
         {
             InitializeComponent();
-            p=new prodotto[100];
+            p = new prodotto[100];
             dim = 0;
         }
 
@@ -42,11 +36,11 @@ namespace strutture
             p[dim].prezzo = float.Parse(prezzo.Text);
             dim++;
             visualizza(p);
-            
+
         }
         public string prodString(prodotto p)
         {
-            return "Nome:"+p.nome+" prezzo:"+p.prezzo.ToString();
+            return "Nome:" + p.nome + " prezzo:" + p.prezzo.ToString();
         }
         public void visualizza(prodotto[] pp)
         {
@@ -68,21 +62,35 @@ namespace strutture
 
         private void modifica_Click(object sender, EventArgs e)
         {
-            dim=0;
-            for (int i = 0; i < dim; i++) 
-            {
-              p[dim].nome = modi.Text;
-              p[dim].prezzo= float.Parse(prezzo.Text);
-            }
-            listView1.Items.Clear();
-            dim = 0;
-            for (int i = 0; i < dim; i++)
-            {
-                listView1.Items.Add(prodString(p[i]));
-            }
-            
-        }
 
+            p[dim].nome = modifica.Text;
+
+            int y=0;
+            ricercamod(p, y);
+        }
+        public struct ricerca
+        {
+            public string nome;
+            public float prezzo;
+        }
+        public void ricercamod(int[] vet, int dim)
+        {
+            int x = 30, y = 30;
+            int cerca = 0;
+            int conta = 0;
+            bool trovato = false;
+            int[] array = new int[dim];
+            do
+            {
+                if (vet[conta] == cerca);
+                {
+                    trovato = true;
+                }
+
+
+            } while (((conta < x) && (trovato = false)) || (array[conta] > cerca));
+
+        }
         private void modi_TextChanged(object sender, EventArgs e)
         {
 
