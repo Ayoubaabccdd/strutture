@@ -40,6 +40,8 @@
             this.modiprezzo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Modifica = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.modinome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nome
@@ -48,6 +50,7 @@
             this.nome.Name = "nome";
             this.nome.Size = new System.Drawing.Size(100, 20);
             this.nome.TabIndex = 0;
+            this.nome.TextChanged += new System.EventHandler(this.nome_TextChanged);
             // 
             // prezzo
             // 
@@ -118,9 +121,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(130, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Modifica nome";
+            this.label3.Text = "Ricerca nome";
             // 
             // modiprezzo
             // 
@@ -148,11 +151,29 @@
             this.Modifica.UseVisualStyleBackColor = true;
             this.Modifica.Click += new System.EventHandler(this.Modifica_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(366, 165);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 13;
+            // 
+            // modinome
+            // 
+            this.modinome.AutoSize = true;
+            this.modinome.Location = new System.Drawing.Point(363, 151);
+            this.modinome.Name = "modinome";
+            this.modinome.Size = new System.Drawing.Size(76, 13);
+            this.modinome.TabIndex = 14;
+            this.modinome.Text = "Modifica nome";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.modinome);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Modifica);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.modiprezzo);
@@ -187,6 +208,8 @@
         private System.Windows.Forms.TextBox modiprezzo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Modifica;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label modinome;
     }
 }
 

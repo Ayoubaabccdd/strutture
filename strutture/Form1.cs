@@ -66,21 +66,18 @@ namespace strutture
             public string nome;
             public float prezzo;
         }
-        
-        public int RicercaS(string e, prodotto[] p)
+
+        public int RicercaS(string e, prodotto[] p, int dim)
         {
             int risultatoricerca = 0;
-            for (int i = 0; i < p.Length; i++)
+            for (int i = 0; i < dim; i++)
             {
                 if (p[i].nome == e)
                 {
                     risultatoricerca = i;
                     break;
                 }
-                else
-                {
-                    risultatoricerca = -1;
-                }
+
             }
             return risultatoricerca;
         }
@@ -91,6 +88,23 @@ namespace strutture
         }
 
         private void Modifica_Click(object sender, EventArgs e)
+        {
+            
+            int x = RicercaS(modi.Text, p, dim);
+            if (x != -1)
+            {
+                //modifica
+                p[x].nome = modinome.Text;
+                p[x].prezzo =  float.Parse(modiprezzo.Text);
+                visualizza(p);
+            }
+            else
+            {
+                MessageBox.Show("Elemento Non trovato");
+            }
+        }
+
+        private void nome_TextChanged(object sender, EventArgs e)
         {
 
         }
