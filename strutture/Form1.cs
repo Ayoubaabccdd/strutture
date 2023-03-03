@@ -60,40 +60,40 @@ namespace strutture
             }
         }
 
-        private void modifica_Click(object sender, EventArgs e)
-        {
 
-            p[dim].nome = modifica.Text;
-
-            int y=0;
-            ricercamod(p, y);
-        }
         public struct ricerca
         {
             public string nome;
             public float prezzo;
         }
-        public void ricercamod(int[] vet, int dim)
+        public struct app
         {
-            int x = 30, y = 30;
-            int cerca = 0;
-            int conta = 0;
-            bool trovato = false;
-            int[] array = new int[dim];
-            do
-            {
-                if (vet[conta] == cerca);
-                {
-                    trovato = true;
-                }
-
-
-            } while (((conta < x) && (trovato = false)) || (array[conta] > cerca));
-
+            public string nome;
+            public float prezzo;
         }
+        public app[] ap;
+        public int RicercaS(string e, prodotto[] p)
+        {
+            int risultatoricerca = 0;
+            for (int i = 0; i < p.Length; i++)
+            {
+                if (p[i].nome == e)
+                {
+                    risultatoricerca = i;
+                    break;
+                }
+                else
+                {
+                    risultatoricerca = -1;
+                }
+            }
+            return risultatoricerca;
+        }
+
         private void modi_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }

@@ -35,11 +35,11 @@
             this.salva = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.visu = new System.Windows.Forms.Button();
-            this.modifica = new System.Windows.Forms.Button();
             this.modi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.modiprezzo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.Modifica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nome
@@ -105,16 +105,6 @@
             this.visu.UseVisualStyleBackColor = true;
             this.visu.Click += new System.EventHandler(this.visu_Click);
             // 
-            // modifica
-            // 
-            this.modifica.Location = new System.Drawing.Point(12, 164);
-            this.modifica.Name = "modifica";
-            this.modifica.Size = new System.Drawing.Size(75, 23);
-            this.modifica.TabIndex = 6;
-            this.modifica.Text = "Modifica";
-            this.modifica.UseVisualStyleBackColor = true;
-            this.modifica.Click += new System.EventHandler(this.modifica_Click);
-            // 
             // modi
             // 
             this.modi.Location = new System.Drawing.Point(133, 166);
@@ -132,12 +122,12 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Modifica nome";
             // 
-            // textBox1
+            // modiprezzo
             // 
-            this.textBox1.Location = new System.Drawing.Point(245, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.modiprezzo.Location = new System.Drawing.Point(245, 166);
+            this.modiprezzo.Name = "modiprezzo";
+            this.modiprezzo.Size = new System.Drawing.Size(100, 20);
+            this.modiprezzo.TabIndex = 9;
             // 
             // label4
             // 
@@ -148,16 +138,25 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Modifica prezzo";
             // 
+            // Modifica
+            // 
+            this.Modifica.Location = new System.Drawing.Point(13, 162);
+            this.Modifica.Name = "Modifica";
+            this.Modifica.Size = new System.Drawing.Size(75, 23);
+            this.Modifica.TabIndex = 11;
+            this.Modifica.Text = "Modifca";
+            this.Modifica.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Modifica);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.modiprezzo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.modi);
-            this.Controls.Add(this.modifica);
             this.Controls.Add(this.visu);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.salva);
@@ -182,11 +181,11 @@
         private System.Windows.Forms.Button salva;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button visu;
-        private System.Windows.Forms.Button modifica;
         private System.Windows.Forms.TextBox modi;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox modiprezzo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button Modifica;
     }
 }
 
