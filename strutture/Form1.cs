@@ -66,12 +66,7 @@ namespace strutture
             public string nome;
             public float prezzo;
         }
-        public struct app
-        {
-            public string nome;
-            public float prezzo;
-        }
-        public app[] ap;
+        
         public int RicercaS(string e, prodotto[] p)
         {
             int risultatoricerca = 0;
@@ -95,5 +90,9 @@ namespace strutture
 
         }
 
+        private void Modifica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
