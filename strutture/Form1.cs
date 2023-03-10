@@ -142,6 +142,21 @@ namespace strutture
                 visualizza(p);
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Somma_Click(object sender, EventArgs e)
+        {
+            float somma=0;
+            for (int j = 0; j < dim; j++)
+            {
+                somma = p[j].prezzo + somma;
+            }
+            listView1.Items.Add("il totael è: "+somma.ToString());
+        }
     }
 }
 

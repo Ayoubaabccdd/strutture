@@ -43,6 +43,7 @@
             this.modinome1 = new System.Windows.Forms.TextBox();
             this.modinome = new System.Windows.Forms.Label();
             this.Cancella = new System.Windows.Forms.Button();
+            this.Somma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nome
@@ -111,7 +112,7 @@
             // 
             // modi
             // 
-            this.modi.Location = new System.Drawing.Point(18, 233);
+            this.modi.Location = new System.Drawing.Point(93, 181);
             this.modi.Name = "modi";
             this.modi.Size = new System.Drawing.Size(100, 20);
             this.modi.TabIndex = 7;
@@ -120,7 +121,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 217);
+            this.label3.Location = new System.Drawing.Point(90, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 8;
@@ -128,7 +129,7 @@
             // 
             // modiprezzo
             // 
-            this.modiprezzo.Location = new System.Drawing.Point(133, 165);
+            this.modiprezzo.Location = new System.Drawing.Point(215, 181);
             this.modiprezzo.Name = "modiprezzo";
             this.modiprezzo.Size = new System.Drawing.Size(100, 20);
             this.modiprezzo.TabIndex = 9;
@@ -136,11 +137,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(130, 151);
+            this.label4.Location = new System.Drawing.Point(212, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Modifica prezzo";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Modifica
             // 
@@ -154,7 +156,7 @@
             // 
             // modinome1
             // 
-            this.modinome1.Location = new System.Drawing.Point(245, 165);
+            this.modinome1.Location = new System.Drawing.Point(321, 181);
             this.modinome1.Name = "modinome1";
             this.modinome1.Size = new System.Drawing.Size(100, 20);
             this.modinome1.TabIndex = 13;
@@ -163,7 +165,7 @@
             // modinome
             // 
             this.modinome.AutoSize = true;
-            this.modinome.Location = new System.Drawing.Point(242, 149);
+            this.modinome.Location = new System.Drawing.Point(318, 167);
             this.modinome.Name = "modinome";
             this.modinome.Size = new System.Drawing.Size(76, 13);
             this.modinome.TabIndex = 14;
@@ -180,11 +182,22 @@
             this.Cancella.UseVisualStyleBackColor = true;
             this.Cancella.Click += new System.EventHandler(this.Cancella_Click);
             // 
+            // Somma
+            // 
+            this.Somma.Location = new System.Drawing.Point(13, 221);
+            this.Somma.Name = "Somma";
+            this.Somma.Size = new System.Drawing.Size(75, 23);
+            this.Somma.TabIndex = 16;
+            this.Somma.Text = "Somma";
+            this.Somma.UseVisualStyleBackColor = true;
+            this.Somma.Click += new System.EventHandler(this.Somma_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Somma);
             this.Controls.Add(this.Cancella);
             this.Controls.Add(this.modinome);
             this.Controls.Add(this.modinome1);
@@ -225,6 +238,7 @@
         private System.Windows.Forms.TextBox modinome1;
         private System.Windows.Forms.Label modinome;
         private System.Windows.Forms.Button Cancella;
+        private System.Windows.Forms.Button Somma;
     }
 }
 
