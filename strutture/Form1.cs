@@ -89,13 +89,13 @@ namespace strutture
 
         private void Modifica_Click(object sender, EventArgs e)
         {
-            
+
             int x = RicercaS(modi.Text, p, dim);
             if (x != -1)
             {
                 //modifica
-                p[x].nome = modinome.Text;
-                p[x].prezzo =  float.Parse(modiprezzo.Text);
+                p[x].nome = modinome1.Text;
+                p[x].prezzo = float.Parse(modiprezzo.Text);
                 visualizza(p);
             }
             else
@@ -108,5 +108,40 @@ namespace strutture
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modinome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancella_Click(object sender, EventArgs e)
+        {
+            CancellaS(nome.Text, p, ref dim);
+        }
+
+        public void CancellaS(string e, prodotto[] p, ref int dim)
+        {
+
+            int x = RicercaS(nome.Text, p, dim);
+            if (x == -1)
+            {
+                MessageBox.Show("Elemento non trovato!", "Errore!");
+            }
+            else
+            {
+                for (int j = x; j < dim - 1; j++)
+                {
+                    p[j] = p[j + 1];
+                }
+                dim--;
+                visualizza(p);
+            }
+        }
     }
 }
+
