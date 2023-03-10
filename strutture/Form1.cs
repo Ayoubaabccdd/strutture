@@ -121,13 +121,13 @@ namespace strutture
 
         private void Cancella_Click(object sender, EventArgs e)
         {
-            CancellaS(nome.Text, p, ref dim);
+            CancellaS(modi.Text, p, ref dim);
         }
 
         public void CancellaS(string e, prodotto[] p, ref int dim)
         {
 
-            int x = RicercaS(nome.Text, p, dim);
+            int x = RicercaS(modi.Text, p, dim);
             if (x == -1)
             {
                 MessageBox.Show("Elemento non trovato!", "Errore!");
@@ -138,7 +138,7 @@ namespace strutture
                 {
                     p[j] = p[j + 1];
                 }
-                dim--;
+                dim++;
                 visualizza(p);
             }
         }
