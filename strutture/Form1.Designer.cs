@@ -44,6 +44,9 @@
             this.modinome = new System.Windows.Forms.Label();
             this.Cancella = new System.Windows.Forms.Button();
             this.Somma = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.modip = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nome
@@ -112,7 +115,7 @@
             // 
             // modi
             // 
-            this.modi.Location = new System.Drawing.Point(93, 181);
+            this.modi.Location = new System.Drawing.Point(13, 197);
             this.modi.Name = "modi";
             this.modi.Size = new System.Drawing.Size(100, 20);
             this.modi.TabIndex = 7;
@@ -121,7 +124,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 165);
+            this.label3.Location = new System.Drawing.Point(9, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 8;
@@ -129,7 +132,7 @@
             // 
             // modiprezzo
             // 
-            this.modiprezzo.Location = new System.Drawing.Point(215, 181);
+            this.modiprezzo.Location = new System.Drawing.Point(123, 225);
             this.modiprezzo.Name = "modiprezzo";
             this.modiprezzo.Size = new System.Drawing.Size(100, 20);
             this.modiprezzo.TabIndex = 9;
@@ -137,7 +140,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(212, 167);
+            this.label4.Location = new System.Drawing.Point(120, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 10;
@@ -146,7 +149,7 @@
             // 
             // Modifica
             // 
-            this.Modifica.Location = new System.Drawing.Point(13, 162);
+            this.Modifica.Location = new System.Drawing.Point(13, 223);
             this.Modifica.Name = "Modifica";
             this.Modifica.Size = new System.Drawing.Size(75, 23);
             this.Modifica.TabIndex = 11;
@@ -156,7 +159,7 @@
             // 
             // modinome1
             // 
-            this.modinome1.Location = new System.Drawing.Point(321, 181);
+            this.modinome1.Location = new System.Drawing.Point(229, 226);
             this.modinome1.Name = "modinome1";
             this.modinome1.Size = new System.Drawing.Size(100, 20);
             this.modinome1.TabIndex = 13;
@@ -165,7 +168,7 @@
             // modinome
             // 
             this.modinome.AutoSize = true;
-            this.modinome.Location = new System.Drawing.Point(318, 167);
+            this.modinome.Location = new System.Drawing.Point(226, 210);
             this.modinome.Name = "modinome";
             this.modinome.Size = new System.Drawing.Size(76, 13);
             this.modinome.TabIndex = 14;
@@ -174,7 +177,7 @@
             // 
             // Cancella
             // 
-            this.Cancella.Location = new System.Drawing.Point(12, 191);
+            this.Cancella.Location = new System.Drawing.Point(13, 252);
             this.Cancella.Name = "Cancella";
             this.Cancella.Size = new System.Drawing.Size(75, 23);
             this.Cancella.TabIndex = 15;
@@ -184,7 +187,7 @@
             // 
             // Somma
             // 
-            this.Somma.Location = new System.Drawing.Point(13, 221);
+            this.Somma.Location = new System.Drawing.Point(12, 283);
             this.Somma.Name = "Somma";
             this.Somma.Size = new System.Drawing.Size(75, 23);
             this.Somma.TabIndex = 16;
@@ -192,11 +195,40 @@
             this.Somma.UseVisualStyleBackColor = true;
             this.Somma.Click += new System.EventHandler(this.Somma_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 312);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Percentuale";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // modip
+            // 
+            this.modip.Location = new System.Drawing.Point(104, 312);
+            this.modip.Name = "modip";
+            this.modip.Size = new System.Drawing.Size(100, 20);
+            this.modip.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(101, 293);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "percentuale da applicare";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.modip);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Somma);
             this.Controls.Add(this.Cancella);
             this.Controls.Add(this.modinome);
@@ -239,6 +271,9 @@
         private System.Windows.Forms.Label modinome;
         private System.Windows.Forms.Button Cancella;
         private System.Windows.Forms.Button Somma;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox modip;
+        private System.Windows.Forms.Label label5;
     }
 }
 

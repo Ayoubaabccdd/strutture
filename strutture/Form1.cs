@@ -81,6 +81,7 @@ namespace strutture
             }
             return risultatoricerca;
         }
+       
 
         private void modi_TextChanged(object sender, EventArgs e)
         {
@@ -156,6 +157,22 @@ namespace strutture
                 somma = p[j].prezzo + somma;
             }
             listView1.Items.Add("il totael è: "+somma.ToString());
+        }
+        //percentuale al prodotto
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int x = RicercaS(modi.Text, p, dim);
+            if (x == -1)
+            {
+                MessageBox.Show("Elemento non trovato!", "Errore!");
+            }
+            else
+            {
+               int percentuale;
+               percentuale =  p[x].prezzo;
+                
+                visualizza(p);
+            }
         }
     }
 }
