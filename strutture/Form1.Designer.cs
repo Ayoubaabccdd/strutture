@@ -47,11 +47,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.modip = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nome
             // 
-            this.nome.Location = new System.Drawing.Point(133, 105);
+            this.nome.Location = new System.Drawing.Point(104, 108);
             this.nome.Name = "nome";
             this.nome.Size = new System.Drawing.Size(100, 20);
             this.nome.TabIndex = 0;
@@ -59,7 +60,7 @@
             // 
             // prezzo
             // 
-            this.prezzo.Location = new System.Drawing.Point(245, 105);
+            this.prezzo.Location = new System.Drawing.Point(229, 105);
             this.prezzo.Name = "prezzo";
             this.prezzo.Size = new System.Drawing.Size(100, 20);
             this.prezzo.TabIndex = 1;
@@ -77,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 89);
+            this.label2.Location = new System.Drawing.Point(263, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 3;
@@ -115,7 +116,7 @@
             // 
             // modi
             // 
-            this.modi.Location = new System.Drawing.Point(94, 174);
+            this.modi.Location = new System.Drawing.Point(104, 174);
             this.modi.Name = "modi";
             this.modi.Size = new System.Drawing.Size(100, 20);
             this.modi.TabIndex = 7;
@@ -140,7 +141,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(101, 210);
+            this.label4.Location = new System.Drawing.Point(110, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 10;
@@ -168,7 +169,7 @@
             // modinome
             // 
             this.modinome.AutoSize = true;
-            this.modinome.Location = new System.Drawing.Point(226, 210);
+            this.modinome.Location = new System.Drawing.Point(244, 210);
             this.modinome.Name = "modinome";
             this.modinome.Size = new System.Drawing.Size(76, 13);
             this.modinome.TabIndex = 14;
@@ -221,11 +222,22 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "sconto da applicare";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 342);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Min Max";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.modip);
             this.Controls.Add(this.button1);
@@ -274,6 +286,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox modip;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
     }
 }
 

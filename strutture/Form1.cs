@@ -156,7 +156,7 @@ namespace strutture
             {
                 somma = p[j].prezzo + somma;
             }
-            listView1.Items.Add("il totael è: " + somma.ToString());
+            MessageBox.Show("il totale è: " + somma.ToString()+ "€");
         }
         //percentuale al prodotto
         private void button1_Click(object sender, EventArgs e)
@@ -172,6 +172,28 @@ namespace strutture
                 p[k].prezzo = p[k].prezzo - a;
             }
             visualizza(p);
+        }
+        public void RicercaMinMax(ref int dim)
+        {
+            float min = p[0].prezzo;
+            float max = p[0].prezzo;
+            for (int i = 1; i < dim; i++)
+            {
+                if (p[i].prezzo > max)
+                {
+                    max = p[i].prezzo;
+                }
+                if (p[i].prezzo < min)
+                {
+                    min = p[i].prezzo;
+                }
+            }
+            MessageBox.Show($"Il prezzo più basso è di {min.ToString("0.00")}€, mentre quello più alto è di {max.ToString("0.00")}€");
+        }
+        public void button2_Click(object sender, EventArgs e)
+        {
+            RicercaMinMax(ref dim);
+
         }
     }
 }
