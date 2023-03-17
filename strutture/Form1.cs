@@ -81,7 +81,7 @@ namespace strutture
             }
             return risultatoricerca;
         }
-       
+
 
         private void modi_TextChanged(object sender, EventArgs e)
         {
@@ -151,28 +151,27 @@ namespace strutture
 
         private void Somma_Click(object sender, EventArgs e)
         {
-            float somma=0;
+            float somma = 0;
             for (int j = 0; j < dim; j++)
             {
                 somma = p[j].prezzo + somma;
             }
-            listView1.Items.Add("il totael è: "+somma.ToString());
+            listView1.Items.Add("il totael è: " + somma.ToString());
         }
         //percentuale al prodotto
         private void button1_Click(object sender, EventArgs e)
         {
-            int x = RicercaS(modi.Text, p, dim);
-            if (x == -1)
+            float a=0;
+            for (int j = 0; j < dim; j++)
             {
-                MessageBox.Show("Elemento non trovato!", "Errore!");
+                a = (p[j].prezzo / 100) * float.Parse(modip.Text);
+               
             }
-            else
+            for (int k = 0; k < dim; k++)
             {
-               int percentuale;
-               percentuale =  p[x].prezzo;
-                
-                visualizza(p);
+                p[k].prezzo = p[k].prezzo - a;
             }
+            visualizza(p);
         }
     }
 }

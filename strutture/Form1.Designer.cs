@@ -115,7 +115,7 @@
             // 
             // modi
             // 
-            this.modi.Location = new System.Drawing.Point(13, 197);
+            this.modi.Location = new System.Drawing.Point(94, 174);
             this.modi.Name = "modi";
             this.modi.Size = new System.Drawing.Size(100, 20);
             this.modi.TabIndex = 7;
@@ -124,7 +124,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 181);
+            this.label3.Location = new System.Drawing.Point(15, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             // modiprezzo
             // 
-            this.modiprezzo.Location = new System.Drawing.Point(123, 225);
+            this.modiprezzo.Location = new System.Drawing.Point(104, 226);
             this.modiprezzo.Name = "modiprezzo";
             this.modiprezzo.Size = new System.Drawing.Size(100, 20);
             this.modiprezzo.TabIndex = 9;
@@ -140,7 +140,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 209);
+            this.label4.Location = new System.Drawing.Point(101, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 10;
@@ -159,7 +159,7 @@
             // 
             // modinome1
             // 
-            this.modinome1.Location = new System.Drawing.Point(229, 226);
+            this.modinome1.Location = new System.Drawing.Point(232, 226);
             this.modinome1.Name = "modinome1";
             this.modinome1.Size = new System.Drawing.Size(100, 20);
             this.modinome1.TabIndex = 13;
@@ -217,9 +217,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(101, 293);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 13);
+            this.label5.Size = new System.Drawing.Size(100, 13);
             this.label5.TabIndex = 19;
-            this.label5.Text = "percentuale da applicare";
+            this.label5.Text = "sconto da applicare";
             // 
             // Form1
             // 
